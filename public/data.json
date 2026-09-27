@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Cyberpunk 2077",
+    "genre": "RPG",
+    "platform": "PC",
+    "price": 39990,
+    "tag": "Popular",
+    "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=85"
+  },
+  {
+    "name": "Halo Infinite",
+    "genre": "Acción",
+    "platform": "Xbox",
+    "price": 44990,
+    "tag": "Nuevo",
+    "image": "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=800&q=85"
+  },
+  {
+    "name": "Elden Ring",
+    "genre": "RPG",
+    "platform": "PlayStation",
+    "price": 49990,
+    "tag": "Top",
+    "image": "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=85"
+  },
+  {
+    "name": "The Last of Us",
+    "genre": "Aventura",
+    "platform": "PlayStation",
+    "price": 45990,
+    "tag": "Popular",
+    "image": "https://images.unsplash.com/photo-1605901309584-818e25960a8f?auto=format&fit=crop&w=800&q=85"
+  },
+  {
+    "name": "EA Sports FC 26",
+    "genre": "Deportes",
+    "platform": "PlayStation",
+    "price": 59990,
+    "tag": "Nuevo",
+    "image": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=800&q=85"
+  },
+  {
+    "name": "Forza Horizon 5",
+    "genre": "Carreras",
+    "platform": "Xbox",
+    "price": 42990,
+    "tag": "Popular",
+    "image": "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=800&q=85"
+  },
+  {
+    "name": "The Legend of Zelda",
+    "genre": "Aventura",
+    "platform": "Nintendo",
+    "price": 54990,
+    "tag": "Top",
+    "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=85"
+  },
+  {
+    "name": "Street Fighter 6",
+    "genre": "Acción",
+    "platform": "PC",
+    "price": 36990,
+    "tag": "Oferta",
+    "image": "https://images.unsplash.com/photo-1547394765-185e1e68f34e?auto=format&fit=crop&w=800&q=85"
+  },
+  {
+    "name": "Baldur's Gate 3",
+    "genre": "RPG",
+    "platform": "PC",
+    "price": 44990,
+    "tag": "Top",
+    "image": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=85"
+  },
+  {
+    "name": "Gran Turismo 7",
+    "genre": "Carreras",
+    "platform": "PlayStation",
+    "price": 49990,
+    "tag": "Popular",
+    "image": "https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=85"
+  },
+  {
+    "name": "Super Mario Bros.",
+    "genre": "Aventura",
+    "platform": "Nintendo",
+    "price": 47990,
+    "tag": "Clásico",
+    "image": "https://images.unsplash.com/photo-1578303512597-81e6cc155b3e?auto=format&fit=crop&w=800&q=85"
+  },
+  {
+    "name": "Mortal Kombat 1",
+    "genre": "Acción",
+    "platform": "Xbox",
+    "price": 42990,
+    "tag": "Oferta",
+    "image": "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?auto=format&fit=crop&w=800&q=85"
+  }
+]
