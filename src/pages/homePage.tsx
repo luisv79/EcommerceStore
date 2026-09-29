@@ -4,6 +4,7 @@ import Header from "../components/Header"
 import MenuCategories from "../components/MenuCategories"
 import Footer from "../components/Footer"
 import CardGames from "../components/CardGames"
+import CardGear from "../components/CardGear"
 
 interface GameItem {
   image: string;
@@ -14,13 +15,26 @@ interface GameItem {
   price: number;
 }
 
+interface GearItem {
+    name: string;
+    category: string;
+    price: number;
+    badge: string;
+    image: string;
+}
+
+interface ApiResponse {
+  games: GameItem[];
+  gear: GearItem[];
+}
+
 function HomePage() {
-  const [data, setData] = useState<GameItem[]>([]);
+ const [data, setData] = useState<ApiResponse | null>(null);
 
   useEffect(() => {
     fetch("/data.json")
       .then((response) => response.json())
-      .then((data: GameItem[]) => setData(data))
+      .then((data: ApiResponse) => setData(data))
       .catch((error) => console.error("Error al cargar datos:", error));
   }, []);
     return(
@@ -78,7 +92,7 @@ console.log()
     <button className="hidden sm:block text-sm text-slate-400 hover:text-white">Ver todos →</button>
   </div>
   <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-    {data.slice(0, 4).map((item: GameItem) => (
+    {data?.games.slice(0, 4).map((item: GameItem) => (
       <CardGames
         key={item.name}
         imageUrl={item.image}
@@ -113,20 +127,17 @@ console.log()
     </div>
     <button className="hidden sm:block text-sm text-slate-400 hover:text-white">Ver colección →</button>
   </div>
-  <div id="gearGrid" className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-    <article className="group">
-  <div className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-slate-900 border border-white/10">
-    <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=700&q=80" alt="${p.name}" className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
-    <button className="absolute bottom-3 left-3 right-3 bg-white text-slate-950 py-2.5 rounded-xl font-bold text-sm translate-y-16 group-hover:translate-y-0 transition duration-300 shadow-xl">
-      + Añadir al carrito
-    </button>
-  </div>
-  <div className="pt-4">
-    <p className="text-xs text-slate-500">Hoodie · Unisex</p>
-    <h3 className="font-bold mt-1">Gamer Essential Hoodie</h3>
-    <p className="text-fuchsia-400 font-black mt-2">$ 29.990</p>
-  </div>
-</article>
+  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+    {data?.gear.slice(0, 4).map((item: GearItem) => (
+      <CardGear
+        key={item.name}
+        imageUrl={item.image}
+        badge={item.badge}
+        category={item.category}
+        nameGear={item.name}
+        price={item.price}
+      />
+    ))}
 
     </div>
 </section>
